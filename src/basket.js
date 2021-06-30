@@ -1,10 +1,11 @@
 class Basket {
     constructor() {
         this.items = [];
+        let maxLength = 4;
     }
 
     add (item) {
-        return this.items.push(item);
+        return (this.items.length >= 4) ? this.items : this.items.push(item)
     }
 
     remove (item) {

@@ -22,3 +22,22 @@ result = basket.remove('Pasta')
 //Verify
 console.log(assertEquals(basket.items.length, 0))
 console.log(assertEquals(basket.items.includes('Pasta'), false))
+
+
+
+
+
+console.log('add item to full basket')
+//Setup
+basket = new Basket()
+basket.add('Pasta');
+basket.add('Pasta');
+basket.add('Pasta');
+basket.add('Pasta');
+
+//Execute
+result = basket.add('Potato')
+
+//Verify
+console.log(assertEquals(basket.items.length, 4))
+console.log(assertEquals(basket.items.includes('Potato'), false))
