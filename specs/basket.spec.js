@@ -11,3 +11,14 @@ result = basket.add('Spinach')
 //Verify
 console.log(assertEquals(basket.items.length, 1))
 console.log(assertEquals(basket.items.includes('Spinach'), true))
+
+console.log('remove one item from empty basket')
+//Setup
+basket = new Basket()
+basket.add('Pasta');
+
+//Execute
+result = basket.remove('Pasta')
+//Verify
+console.log(assertEquals(basket.items.length, 0))
+console.log(assertEquals(basket.items.includes('Pasta'), false))
