@@ -61,7 +61,7 @@ const capacityLarge = 3;
 
 //Execute
 basketSmall = new Basket(capacitySmall);
-basketLarge = new Basket(capacitySmall);
+basketLarge = new Basket(capacityLarge);
 
 basketSmall.add('Pasta');
 basketSmall.add('Pasta');
